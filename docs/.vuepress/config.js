@@ -12,16 +12,17 @@ export default defineUserConfig({
     // 默认主题配置
     logo: '/images/logo.png',
     logoAlt: 'logo',
-    home: '/', // 用途 1.首页 2.logo链接 3.404返回页面
+    repo: 'https://github.com/isliwei/vue-press-docs', // git仓库
+    home: '/', // 用途 -> 1.首页 2.logo链接 3.404返回页面
+    backToHome: '首页', // 404页面返回首页按钮文案
+    editLink: false, // 是否展示编辑此页
+    lastUpdated: false, // 不展示 最近更新时间戳
+    contributors: false, // 不展示贡献者
     navbar: [
-      {
-        text: '首页',
-        link: '/',
-      },
-      {
-        text: '新闻',
-        link: '/News',
-      },
+      // {
+      //   text: '首页',
+      //   link: '/',
+      // }
     ],
     sidebar: [
       {
@@ -55,6 +56,6 @@ export default defineUserConfig({
           },
         ],
       }
-    ],
+    ]
   }),
 })
